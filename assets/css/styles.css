@@ -751,6 +751,7 @@ body {
         background-color: #333;
         text-align: center;
         padding: 10px 0;
+        z-index: 3;
     }
 
     .nav-links.active {
