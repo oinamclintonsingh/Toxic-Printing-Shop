@@ -1,4 +1,3 @@
-/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -8,94 +7,85 @@
 :root {
     --murap-touba: #4d4d4d;
     --ngourap-touba: aliceblue;
+    --amuba: black;
 }
 
 body {
     font-family: 'Built Titling', sans-serif;
 }
 
-/* Navbar Styles */
 .navbar {
+    background-color: var(--amuba);
+    color: var(--ngourap-touba);
+    padding: 1rem 6rem;
+}
+
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
-    padding: 10px 20px;
+    padding: 15px;
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+    display: flex;
+    align-items: center;
 }
 
 .logo img {
-    width: 100px;
-    /* Adjust this value as per your desired logo size */
-    height: auto;
+    height: 40px;
+}
+
+.toggle-button {
+    font-size: 24px;
+    color: white;
+    display: none;
+    cursor: pointer;
 }
 
 .nav-links {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 20px;
     list-style: none;
-    flex-grow: 1;
-}
-
-.nav-links li {
-    margin-left: 40px;
+    justify-content: center;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
-    padding: 8px 12px;
-    transition: background-color 0.3s ease;
-    font-weight: 600;
-    /* You can use 'normal', 'bold', or values like 300, 400, 500, 600, etc. */
-    font-size: 16px;
-    /* Adjust the size as needed for the height of the font */
-    line-height: 1.5;
-    /* Adjust line-height for spacing between lines, useful for multi-line text */
+    font-weight: 400;
     letter-spacing: 1.5px;
-    /* Increase the gap between characters, adjust the value as needed */
+    line-height: 1.5;
+    flex-shrink: none;
+    padding: .2rem .2rem;
 }
 
 .nav-links a:hover {
     background-color: grey;
     border-radius: 5px;
+    width: 40rem;
 }
 
-/* Contact Us Section */
 .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* Aligns the content (Contact Us and icons) horizontally to the center */
-    justify-content: center;
-    /* Vertically center the text and icons */
-    margin-left: 30px;
-    /* Adds some space between the main navigation links and the Contact Us section */
-
+    text-align: start;
+    list-style: none;
 }
 
-.social-icons {
+.contact .social-icons {
     display: flex;
     gap: 10px;
-    margin-top: 10px;
+    justify-content: center;
 }
 
-.social-icons a {
-    display: inline-block;
-    padding: 1px 3px;
+.mobile-menu-icon {
+    display: none;
+    cursor: pointer;
 }
 
 .social-icons img {
     width: 25px;
-    /* Adjust icon size */
     height: 25px;
 }
-
 
 /* Hero Section Styles */
 .hero {
@@ -172,6 +162,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 1rem 0;
+    height: 60vh;
 }
 
 .get-to-know-content {
@@ -222,6 +213,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    height: 60vh;
 }
 
 /* Applying an overlay filter on the background */
@@ -305,8 +297,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Ensures responsiveness for smaller screens */
-    text-align: center; /* Ensures all text is centered */
+    flex-wrap: wrap;
+    /* Ensures responsiveness for smaller screens */
+    text-align: center;
+    /* Ensures all text is centered */
 }
 
 .address {
@@ -349,77 +343,432 @@ body {
     background-color: #d47e0e;
     padding: 0 10% 3% 10%;
     margin: 10% 10%;
-  }
-  
-  #blog-posts h1 {
+}
+
+#blog-posts h1 {
     text-align: center;
     padding: 10px;
-  
-  }
-  
-  .coming-soon {
+
+}
+
+.coming-soon {
     text-align: center;
     padding: 100px;
     border-radius: 10px;
     background-color: white;
     align-content: center;
-  }
-  
-  .coming-soon h2 {
+}
+
+.coming-soon h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-  }
-  
-  .countdown {
+}
+
+.countdown {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-  }
-  
-  .countdown div {
+}
+
+.countdown div {
     margin: 0 10px;
-  }
-  
-  .countdown span {
+}
+
+.countdown span {
     font-size: 1.5rem;
     font-weight: bold;
     color: #333;
-  }
-  
-  .countdown p {
+}
+
+.countdown p {
     font-size: 1.2rem;
     color: #777;
-  }
+}
+
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    height: 100vh;
+    /* Full viewport height */
+    background-image: url('../photos/images/Background_01.png');
+    background-size: cover;
+    /* Ensures the background covers the section */
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Applying an overlay filter on the background */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(75, 64, 64, 0.5);
+    /* Black overlay with 50% opacity */
+    opacity: 0.85;
+    /* 52% opacity */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 90px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 1);
+    mix-blend-mode: multiply;
+    letter-spacing: 8px;
+}
+
+.cta-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: var(--ngourap-touba);
+    border: 2px solid var(--ngourap-touba);
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+
+}
+
+.cta-btn:hover {
+    background-color: var(--murap-touba);
+}
+
+/* Get-To-Know */
+
+.get-to-know {
+    background-image: url('../photos/logos/toxic-background.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    height: 60vh;
+}
+
+.get-to-know-content {
+    position: relative;
+    text-align: center;
+    background-color: transparent;
+}
+
+.get-to-know-content p {
+    color: var(--murap-touba);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 2rem 2rem;
+    letter-spacing: 1px;
+
+}
+
+.get-to-know-btn {
+    width: 18rem;
+    height: 3rem;
+    color: var(--murap-touba);
+    font-size: 30px;
+    letter-spacing: -1px;
+    border: 0.15rem solid var(--murap-touba);
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+
+.get-to-know-btn:hover {
+    color: var(--ngourap-touba);
+    background-color: var(--murap-touba);
+}
+
+
+/* Client Work Section */
+.client-work {
+    padding: 3rem;
+    background-image: url('../photos/images/Background_02.png');
+    position: relative;
+    background-size: cover;
+    /* Ensures the background covers the section */
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+}
+
+/* Applying an overlay filter on the background */
+.client-work::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(92, 75, 75, 0.5);
+    /* Black overlay with 50% opacity */
+    opacity: 0.85;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.client-work-content h3 {
+    color: var(--ngourap-touba);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.client-work-content h2 {
+    color: var(--ngourap-touba);
+    font-size: 4.5rem;
+    letter-spacing: 5px;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.see-all-btn {
+    padding: 1rem 2rem;
+    font-size: 20px;
+    letter-spacing: 1px;
+    background-color: transparent;
+    color: white;
+    border: 0.15rem solid var(--ngourap-touba);
+    cursor: pointer;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+}
+
+.see-all-btn:hover {
+    background-color: var(--murap-touba);
+    color: var(--ngourap-touba);
+}
+
+/* Logo Section */
+.hero-logo {
+    width: 100%;
+    height: 30vh;
+    background-color: var(--ngourap-touba);
+}
+
+.hero-logo-content {
+    background-image: url(../photos/logos/toxic-logo-instagram-logo.png);
+    padding: 5px 5px;
+    width: 100%;
+    height: 30vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Add this to adjust the background size */
+    background-size: 20% 25%;
+    /* Makes the image fit inside the container while maintaining its aspect ratio */
+
+}
+
+/* Footer Section */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Ensures responsiveness for smaller screens */
+    text-align: center;
+    /* Ensures all text is centered */
+}
+
+.address {
+    flex: 1;
+}
+
+.address p {
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-left: -220px;
+}
+
+.address p span {
+    text-transform: lowercase;
+}
+
+.footer-logo {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-logo img {
+    padding: 0;
+    margin: 0;
+    width: 10rem;
+    height: 6rem;
+}
+
+.footer-bottom {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
 
 /* ============================================== */
+#blog-posts {
+    background-color: #d47e0e;
+    padding: 0 10% 3% 10%;
+    margin: 10% 10%;
+}
 
-/* Responsive Styles */
-/* Styles for Mobile Devices */
-@media only screen and (max-width: 768px) {
-    .navbar ul {
-        flex-direction: column;
+#blog-posts h1 {
+    text-align: center;
+    padding: 10px;
+
+}
+
+.coming-soon {
+    text-align: center;
+    padding: 100px;
+    border-radius: 10px;
+    background-color: white;
+    align-content: center;
+}
+
+.coming-soon h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.countdown div {
+    margin: 0 10px;
+}
+
+.countdown span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.countdown p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+/* =============================================================== */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .toggle-button {
         display: none;
+    }
+
+
+    .nav-container {
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    .link-ahanba {
+        flex: 1 0 100%;
+        order: 2;
+    }
+
+    .contact {
+        order: 1;
+    }
+
+    /* Hero Section */
+    .hero h1 {
+        font-size: 70px;
+        letter-spacing: 5px;
+    }
+
+    .cta-btn {
+        font-size: 0.9rem;
+        padding: 1rem 1.7rem;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .address p {
+        margin-left: -100px;
+    }
+}
+
+
+
+
+/* ================================================================ */
+@media only screen and (max-width: 768px) {
+
+    .nav-links,
+    .contact {
+        display: none;
+        /* Hide the links initially */
+        flex-direction: column;
         position: absolute;
-        top: 60px;
-        right: 0;
+        top: 5rem;
+        left: 0;
         width: 100%;
-        background-color: black;
+        background-color: #333;
+        text-align: center;
+        padding: 10px 0;
     }
 
-    .navbar ul.active {
+    .nav-links.active {
         display: flex;
-        z-index: 3;
+        /* Show links when active */
     }
 
-    .navbar ul li {
+    .nav-links li {
         margin: 10px 0;
     }
 
     .toggle-button {
         display: block;
-        font-size: 1.5rem;
-        cursor: pointer;
-        color: white;
+        /* Show toggle button on mobile */
+    }
+
+    .contact.active {
+        display: flex;
     }
 
     /* Hero Section */
@@ -448,7 +797,7 @@ body {
     .hero-logo-content {
         background-size: 50% 25%;
         /* Makes the image fit inside the container while maintaining its aspect ratio */
-    
+
     }
 
     /* Footer */
@@ -465,70 +814,46 @@ body {
         text-align: center;
     }
 
-      /* =============================================================================================== */
+    /* =============================================================================================== */
 
-  #blog-posts {
-    padding: 0 5% 3% 5%;
-    /* Further reduce padding for smaller screens */
-}
-
-.coming-soon {
-    padding: 30px;
-    /* Further reduce padding for smaller screens */
-}
-
-.coming-soon h2 {
-    font-size: 1.5rem;
-    /* Further decrease font size for smaller screens */
-}
-
-.countdown {
-    margin-bottom: 5px;
-    /* Further decrease margin for smaller screens */
-}
-
-.countdown div {
-    margin: 0 3px;
-    /* Further decrease margin for smaller screens */
-}
-
-.countdown span {
-    font-size: 1rem;
-    /* Further decrease font size for smaller screens */
-}
-
-.countdown p {
-    font-size: 0.9rem;
-    /* Further decrease font size for smaller screens */
-}
-}
-
-/* ================================================================ */
-
-/* Styles for Tablets */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-    .toggle-button {
-        display: none;
+    #blog-posts {
+        padding: 0 5% 3% 5%;
+        /* Further reduce padding for smaller screens */
     }
 
-    /* Hero Section */
-    .hero h1 {
-        font-size: 70px;
-        letter-spacing: 5px;
+    .coming-soon {
+        padding: 30px;
+        /* Further reduce padding for smaller screens */
     }
 
-    .cta-btn {
+    .coming-soon h2 {
+        font-size: 1.5rem;
+        /* Further decrease font size for smaller screens */
+    }
+
+    .countdown {
+        margin-bottom: 5px;
+        /* Further decrease margin for smaller screens */
+    }
+
+    .countdown div {
+        margin: 0 3px;
+        /* Further decrease margin for smaller screens */
+    }
+
+    .countdown span {
+        font-size: 1rem;
+        /* Further decrease font size for smaller screens */
+    }
+
+    .countdown p {
         font-size: 0.9rem;
-        padding: 1rem 1.7rem;
+        /* Further decrease font size for smaller screens */
     }
+}
 
-    /* Footer */
-    .footer-content {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .address p {
-        margin-left: -100px;
+@media only screen and (max-width: 480px) {
+    .nav-links a {
+        font-size: 14px;
     }
 }

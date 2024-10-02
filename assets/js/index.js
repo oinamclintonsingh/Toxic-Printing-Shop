@@ -1,7 +1,4 @@
-// Navbar toggle for mobile devices
-const toggleButton = document.querySelector('.toggle-button');
-const navbarLinks = document.querySelector('.nav-links');
-
-toggleButton.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active');
+document.querySelector('.toggle-button').addEventListener('click', function() {
+    document.querySelector('.nav-links').classList.toggle('active');
+    document.querySelector('.contact').classList.toggle('active');
 });
