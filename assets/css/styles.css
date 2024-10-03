@@ -19,6 +19,11 @@ body {
     font-family: 'Built Titling', sans-serif;
 }
 
+
+/* ================================================================================ */
+/* ================================ */
+/* NavBar Sidagi houre */
+
 .navbar {
     background-color: var(--amuba);
     color: var(--ngourap-touba);
@@ -96,7 +101,9 @@ body {
     border-radius: 10px;
 }
 
-/* Hero Section Styles */
+/* ================================== */
+/* Hero Section Sidagi houre */
+
 .hero {
     position: relative;
     height: 100vh;
@@ -158,6 +165,7 @@ body {
     background-color: var(--murap-touba);
 }
 
+/* ================================================== */
 /* Get-To-Know */
 
 .get-to-know {
@@ -208,8 +216,9 @@ body {
     background-color: var(--murap-touba);
 }
 
+/* ===================================================== */
+/* Client Work Section sidei houre */
 
-/* Client Work Section */
 .client-work {
     padding: 3rem;
     background-image: url('../photos/images/Background_02.png');
@@ -275,7 +284,9 @@ body {
     color: var(--ngourap-touba);
 }
 
-/* Logo Section */
+/* ============================================== */
+/* Logo Section Sidagi houre */
+
 .hero-logo {
     width: 100%;
     height: 30vh;
@@ -295,7 +306,9 @@ body {
 
 }
 
+/* ========================================= */
 /* Footer Section */
+
 .footer {
     background-color: #000;
     color: #fff;
@@ -347,305 +360,9 @@ body {
     margin: 0;
 }
 
-/* ============================================== */
-#blog-posts {
-    background-color: #d47e0e;
-    padding: 0 10% 3% 10%;
-    margin: 10% 10%;
-}
+/* ========================================================================== */
+/* countdown page sidei houre */
 
-#blog-posts h1 {
-    text-align: center;
-    padding: 10px;
-
-}
-
-.coming-soon {
-    text-align: center;
-    padding: 100px;
-    border-radius: 10px;
-    background-color: white;
-    align-content: center;
-}
-
-.coming-soon h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.countdown {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.countdown div {
-    margin: 0 10px;
-}
-
-.countdown span {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-}
-
-.countdown p {
-    font-size: 1.2rem;
-    color: #777;
-}
-
-/* Hero Section Styles */
-.hero {
-    position: relative;
-    height: 100vh;
-    /* Full viewport height */
-    background-image: url('../photos/images/Background_01.png');
-    background-size: cover;
-    /* Ensures the background covers the section */
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Applying an overlay filter on the background */
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(75, 64, 64, 0.5);
-    /* Black overlay with 50% opacity */
-    opacity: 0.85;
-    /* 52% opacity */
-    z-index: 1;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-}
-
-.hero h1 {
-    color: white;
-    font-size: 90px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-shadow: 3px 3px 1px rgba(0, 0, 0, 1);
-    mix-blend-mode: multiply;
-    letter-spacing: 8px;
-}
-
-.cta-btn {
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    color: var(--ngourap-touba);
-    border: 2px solid var(--ngourap-touba);
-    background-color: transparent;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-transform: uppercase;
-
-}
-
-.cta-btn:hover {
-    background-color: var(--murap-touba);
-}
-
-/* Get-To-Know */
-
-.get-to-know {
-    background-image: url('../photos/logos/toxic-background.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: fit-content;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1rem 0;
-    height: 60vh;
-}
-
-.get-to-know-content {
-    position: relative;
-    text-align: center;
-    background-color: transparent;
-}
-
-.get-to-know-content p {
-    color: var(--murap-touba);
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 2rem 2rem;
-    letter-spacing: 1px;
-
-}
-
-.get-to-know-btn {
-    width: 18rem;
-    height: 3rem;
-    color: var(--murap-touba);
-    font-size: 30px;
-    letter-spacing: -1px;
-    border: 0.15rem solid var(--murap-touba);
-    margin-bottom: 2rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-
-}
-
-
-.get-to-know-btn:hover {
-    color: var(--ngourap-touba);
-    background-color: var(--murap-touba);
-}
-
-
-/* Client Work Section */
-.client-work {
-    padding: 3rem;
-    background-image: url('../photos/images/Background_02.png');
-    position: relative;
-    background-size: cover;
-    /* Ensures the background covers the section */
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 60vh;
-}
-
-/* Applying an overlay filter on the background */
-.client-work::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(92, 75, 75, 0.5);
-    /* Black overlay with 50% opacity */
-    opacity: 0.85;
-    z-index: 1;
-    pointer-events: none;
-}
-
-.client-work-content h3 {
-    color: var(--ngourap-touba);
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    position: relative;
-    z-index: 2;
-}
-
-.client-work-content h2 {
-    color: var(--ngourap-touba);
-    font-size: 4.5rem;
-    letter-spacing: 5px;
-    margin-bottom: 1rem;
-    position: relative;
-    z-index: 2;
-}
-
-.see-all-btn {
-    padding: 1rem 2rem;
-    font-size: 20px;
-    letter-spacing: 1px;
-    background-color: transparent;
-    color: white;
-    border: 0.15rem solid var(--ngourap-touba);
-    cursor: pointer;
-    text-transform: uppercase;
-    position: relative;
-    z-index: 2;
-}
-
-.see-all-btn:hover {
-    background-color: var(--murap-touba);
-    color: var(--ngourap-touba);
-}
-
-/* Logo Section */
-.hero-logo {
-    width: 100%;
-    height: 30vh;
-    background-color: var(--ngourap-touba);
-}
-
-.hero-logo-content {
-    background-image: url(../photos/logos/toxic-logo-instagram-logo.png);
-    padding: 5px 5px;
-    width: 100%;
-    height: 30vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* Add this to adjust the background size */
-    background-size: 20% 25%;
-    /* Makes the image fit inside the container while maintaining its aspect ratio */
-
-}
-
-/* Footer Section */
-.footer {
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    /* Ensures responsiveness for smaller screens */
-    text-align: center;
-    /* Ensures all text is centered */
-}
-
-.address {
-    flex: 1;
-}
-
-.address p {
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-left: -220px;
-}
-
-.address p span {
-    text-transform: lowercase;
-}
-
-.footer-logo {
-    flex: 1;
-    text-align: center;
-}
-
-.footer-logo img {
-    padding: 0;
-    margin: 0;
-    width: 10rem;
-    height: 6rem;
-}
-
-.footer-bottom {
-    flex: 1;
-    text-align: right;
-}
-
-.footer-bottom p {
-    margin: 0;
-}
-
-/* ============================================== */
 #blog-posts {
     background-color: #d47e0e;
     padding: 0 10% 3% 10%;
@@ -693,7 +410,8 @@ body {
 }
 
 /* =============================================================== */
-Sins
+/* Tablate screen layout sidagi houre */
+
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 
     .toggle-button {
@@ -718,7 +436,7 @@ Sins
     }
 
     .nav-links a {
-        
+
         letter-spacing: 1.2px;
     }
 
@@ -749,10 +467,8 @@ Sins
 }
 
 
-
-
 /* ================================================================ */
-/* Sina Mobile Phone gee view */
+/* Mobile Phone Screen layout sidagi houre */
 
 @media only screen and (max-width: 768px) {
 
@@ -833,6 +549,7 @@ Sins
     }
 
     /* =============================================================================================== */
+    /* Mobile Phone gee Countdown layout sidagi houre */
 
     #blog-posts {
         padding: 0 5% 3% 5%;
@@ -869,6 +586,9 @@ Sins
         /* Further decrease font size for smaller screens */
     }
 }
+
+/* =============================================================================================== */
+/* Mobile Phone Screen Apikpa gee Layout Sidagi houre */
 
 @media only screen and (max-width: 480px) {
     .nav-links a {
